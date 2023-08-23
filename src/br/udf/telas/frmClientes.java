@@ -4,6 +4,8 @@
  */
 package br.udf.telas;
 
+import java.awt.Toolkit;
+
 /**
  *
  * @author autologon
@@ -15,6 +17,7 @@ public class frmClientes extends javax.swing.JFrame {
      */
     public frmClientes() {
         initComponents();
+        inserirIcone();
     }
 
     /**
@@ -152,6 +155,9 @@ public class frmClientes extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnSairClienteActionPerformed
 
+    private void inserirIcone() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconCliente.png")));
+    }
     /**
      * @param args the command line arguments
      */
